@@ -211,6 +211,7 @@ html {
     color: white;
    
 }
+
 .design .image img{
     background-size: cover;
     width: 100%;
@@ -230,7 +231,25 @@ html {
     padding-bottom: 40px;
     color: #474747;
 }
- 
+.scrl{
+    right: 20px ;
+    bottom: 20px ;
+    background-color: #DDD;
+    width: 40px ;
+    height: 40px ;
+    position:fixed;
+    z-index: 2;
+    font-size: 35px ;
+    display: none;
+
+}
+.scrl i{
+    color: white;
+    font-size: 27px ;
+    position: absolute;
+   padding-left: 13px ;
+   margin-top: 5px ;
+}
 .design .text .min a {
     padding-bottom: 50px;
     width: 70px;
@@ -241,7 +260,11 @@ html {
     color: white;
     background-color: #97a9bd;
     text-transform: uppercase;
+    transition: 0.3s ;
  }
+.design .text .min a:hover{
+    background-color: transparent;
+}
 .conta {
     display: flex;
     gap: 5%;
@@ -1060,7 +1083,7 @@ html {
 .five .container .div4 hr {
    border: 1px solid #bda697;
 } 
- @media(max-width :786px ){
+ @media(max-width :767px ){
      .ghader {
          margin-top: -200px ;
      }
@@ -1081,6 +1104,9 @@ html {
         flex-direction: column;
         flex-wrap: wrap;
        
+     }
+     .ghadeer .container .boxes .image img {
+        width: 130px;
      }
      .four .container .boxes{
         display: flex;

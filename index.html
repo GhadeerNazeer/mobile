@@ -67,6 +67,9 @@
            
         </div>
     </div>
+    <div class="scrl">
+        <i class="fas fa-angle-right"></i>
+    </div>
     <div class="conta">
         <div class="box one">
             <i class="fas fa-hand-rock"></i>
@@ -483,5 +486,20 @@
         </div>
         
     </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $(window).on("scroll" ,function(){
+                var sc=$(window).scrollTop();
+                if(sc > 200){
+                    $(".scrl").fadeIn();
+                }
+                else{
+                    $(".scrl").fadeOut();
+                }
+            });
+
+        });
+    </script>
 </body>
 </html>
